@@ -1,0 +1,29 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 10rem;
+  background-color: var(--pure);
+  border-bottom: 5px solid var(--blue3);
+  z-index: 1;
+}
+
+.navbar {
+  padding: 0.4rem 0;
+}
+
+.navbar .nav_items li {
+  list-style: none;
+  margin: 1rem;
+}
+.navbar .navbar_links .nav_items .nav_link {
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--blue1);
+}
+
+.navbar_links .live_case {
+  margin-left: 1rem;
+}

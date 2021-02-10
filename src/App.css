@@ -1,5 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --red1: #ff4f5b;
+  --red2: #ebdedd;
+
+  --green1: #1ee0ac;
+  --purple1: #816bff;
+
+  --blue1: #465675;
+  --blue2: #2a81ea;
+  --blue3: #dde3eb;
+  --blue4: #fafafa;
+
+  --pure: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  src: local("./Assets/Fonts/Roboto/Roboto-Regular.ttf");
+  color: var(--blue1);
+}
+
+/* Utility Classes */
+.flex {
+  display: flex;
+}
+.align_center {
+  align-items: center;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.btn {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 0.8rem 1.8rem;
+  border-radius: 100px;
+  font-size: 1.2rem;
+}
+.btn_1 {
+  background-color: var(--blue2);
+  color: var(--pure);
+}
+.btn_2 {
+  background-color: var(--blue3);
+  color: var(--blue2);
 }
