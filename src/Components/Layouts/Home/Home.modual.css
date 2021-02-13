@@ -1,0 +1,68 @@
+.hero .hero_details {
+  flex: 0.7;
+}
+
+/* Hero Title */
+.hero_details .title {
+  font-family: "Oswald", sans-serif;
+}
+.hero_details .title h1 {
+  font-size: 6.5rem;
+  color: var(--blue1);
+}
+.hero_details .title h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: var(--red1);
+}
+.hero_details .title h2 {
+  font-size: 3.5rem;
+  line-height: 0.8;
+  color: var(--blue1);
+}
+
+/* Hero Detail */
+.hero_details .detail p {
+  color: var(--blue1);
+}
+
+/* Hero Buttons */
+.hero_details .hero_buttons {
+  margin: 2rem 0;
+}
+.hero_details .hero_buttons .btn .faShieldVirus,
+.hero_details .hero_buttons .btn .faArrowRight {
+  margin-left: 1rem;
+}
+.hero_details .hero_buttons .btn_2 {
+  margin: 0 2rem;
+}
+
+/* World corona cases */
+.hero_details .global_cases {
+  color: var(--blue1);
+  margin-top: 8rem;
+}
+.hero_details .global_cases p {
+  font-size: 1rem !important;
+}
+.hero_details .global_cases > p {
+  font-weight: 300;
+  font-style: italic;
+}
+.hero_details .global_cases .faGlobeAsia {
+  margin-right: 0.6rem;
+}
+.hero_details .global_cases h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.hero_details .global_cases .cases {
+  margin: 1.2rem 0;
+}
+
+/* Hero Image */
+.hero_img img {
+  width: 600px;
+}

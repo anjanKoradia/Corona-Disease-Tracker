@@ -19,6 +19,8 @@
   --blue4: #fafafa;
 
   --pure: #fff;
+
+  --shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -27,7 +29,20 @@ body {
   color: var(--blue1);
 }
 
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
 /* Utility Classes */
+.container {
+  background-color: var(--blue4);
+  width: 100%;
+  padding: 4rem 10rem;
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -37,6 +52,16 @@ body {
 .justify_between {
   justify-content: space-between;
 }
+
+.tag {
+  display: inline-block;
+  background-color: var(--red2);
+  color: var(--red1);
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  font-weight: 700;
+}
+
 .btn {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
