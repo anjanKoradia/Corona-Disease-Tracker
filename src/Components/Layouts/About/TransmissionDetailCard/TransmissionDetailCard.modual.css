@@ -1,0 +1,28 @@
+.transmission_detail_card {
+  background-color: var(--pure);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  transition: 0.4s linear;
+}
+.transmission_detail_card:nth-child(2) {
+  margin: 0 2rem;
+}
+.transmission_detail_card img {
+  width: 100%;
+  border-bottom: 10px solid var(--blue2);
+}
+.transmission_detail_card .transmission_details {
+  padding: 2rem;
+}
+.transmission_detail_card .transmission_details h2 {
+  color: var(--blue2);
+  margin-bottom: 1rem;
+}
+.transmission_detail_card .transmission_details p {
+  color: var(--blue1);
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.transmission_detail_card:hover {
+  transform: translateY(-20px);
+}

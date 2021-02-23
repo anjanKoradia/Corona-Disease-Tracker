@@ -25,7 +25,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  src: local("./Assets/Fonts/Roboto/Roboto-Regular.ttf");
   color: var(--blue1);
 }
 
@@ -80,10 +79,10 @@ p {
 }
 
 .title h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 .title p {
-  font-size: 1rem;
-  margin: 0.6rem 0;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }

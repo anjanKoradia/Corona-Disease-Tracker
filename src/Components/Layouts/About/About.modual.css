@@ -1,0 +1,21 @@
+.about .about_coronaVirus {
+  margin: 3rem 0;
+}
+.about .about_coronaVirus .outbreak_situation h1 {
+  font-size: 1.6rem;
+  color: var(--blue2);
+  margin-bottom: 1.5rem;
+}
+.about .about_coronaVirus .about_outbreakSituation p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-align: justify;
+}
+.about .info_quickLinks {
+  margin-left: 4rem;
+}
+.about .transmission h1 {
+  font-size: 1.6rem;
+  color: var(--blue2);
+  margin: 5rem 0 3rem 0;
+}
