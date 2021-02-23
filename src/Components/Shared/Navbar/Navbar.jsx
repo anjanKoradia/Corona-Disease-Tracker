@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./Navbar.modual.css"
-
 import logo from "../../../Assets/Images/logo.png";
+import "./Navbar.modual.css"
 
 function Navbar() {
   return (
@@ -45,6 +44,15 @@ function Navbar() {
                 activeClassName="active"
               >
                 Prevention
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="nav_link"
+                to="/treatment"
+                activeClassName="active"
+              >
+                Treatment
               </NavLink>
             </li>
           </ul>

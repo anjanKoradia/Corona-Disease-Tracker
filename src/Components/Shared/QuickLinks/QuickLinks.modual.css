@@ -1,0 +1,14 @@
+.quick_links {
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.quick_links h2 {
+  padding: 1.2rem;
+  font-weight: 700;
+}
+.quick_links .link {
+  padding: 1.2rem;
+  text-decoration: none;
+  color: var(--blue2);
+  font-size: 1.2rem;
+}

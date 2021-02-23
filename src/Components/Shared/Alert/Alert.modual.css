@@ -1,0 +1,20 @@
+.alert {
+  padding: 1.5rem 1rem;
+  margin: 2rem 0;
+  border: 2px solid var(--red1);
+  background-color: var(--red2);
+}
+.alert .faStethoscope {
+  color: var(--red1);
+  font-size: 2rem;
+  margin: 0.3rem 0;
+}
+.alert p {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  text-align: justify;
+}
+.alert p span {
+  color: var(--red1);
+  font-weight: 700;
+}
