@@ -1,0 +1,24 @@
+.symptom_card {
+  margin: 2rem 0;
+  border: 3px dashed var(--blue2);
+  background-color: var(--pure);
+  padding: 2rem;
+}
+.symptom_card img {
+  width: 80px;
+}
+.symptom_detail {
+  margin: 0 2rem;
+}
+.symptom_detail h1 {
+  color: var(--blue2);
+  margin: 0.6rem 0;
+}
+.symptom_detail p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 0.6rem 0;
+}
+.symptom_detail p span {
+  font-weight: 700;
+}
