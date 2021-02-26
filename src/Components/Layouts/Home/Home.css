@@ -1,5 +1,5 @@
 .hero .hero_details {
-  flex: 0.7;
+  flex: 0.8;
 }
 
 /* Hero Title */
@@ -41,7 +41,7 @@
 /* World corona cases */
 .hero_details .global_cases {
   color: var(--blue1);
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .hero_details .global_cases p {
   font-size: 1rem !important;
@@ -65,4 +65,59 @@
 /* Hero Image */
 .hero_img img {
   width: 600px;
+}
+
+/* What to do in corona */
+.WhatToDo_In_Corona.container {
+  margin-top: 0;
+  background-color: var(--pure);
+}
+.WhatToDo_In_Corona .title {
+  max-width: 50%;
+}
+.WhatToDo_In_Corona .title h1 {
+  color: var(--blue2);
+}
+.WhatToDo_In_Corona .title p {
+  color: var(--red1);
+  font-size: 1.2rem;
+}
+
+.WhatToDo_In_Corona .what_to_do {
+  padding: 2.5rem;
+  margin: 2rem 0;
+  border: 2px solid var(--blue2);
+  border-radius: 10px;
+  background-color: var(--pure);
+  box-shadow: 0 0px 8px rgba(42, 129, 234, 0.5);
+}
+
+.WhatToDo_In_Corona .what_to_do .steps > p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.WhatToDo_In_Corona .what_to_do .steps .whatToDo_list {
+  list-style: none;
+  padding: 0;
+}
+.WhatToDo_In_Corona .what_to_do .steps .whatToDo_list li {
+  padding-left: 1.3em;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.WhatToDo_In_Corona .what_to_do .steps .whatToDo_list li:before {
+  content: "\2714";
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.5rem;
+  color: var(--green1);
+}
+
+.WhatToDo_In_Corona .what_to_do .image {
+  width: 100%;
+  margin-left: 2rem;
+}
+.WhatToDo_In_Corona .what_to_do .image img {
+  width: 100%;
 }

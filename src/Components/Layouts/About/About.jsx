@@ -5,7 +5,7 @@ import TransmissionDetailCard from "./TransmissionDetailCard/TransmissionDetailC
 import spreadA from "../../../Assets/Images/spread-a.png";
 import spreadB from "../../../Assets/Images/spread-b.png";
 import spreadC from "../../../Assets/Images/spread-c.png";
-import "./About.modual.css";
+import "./About.css";
 
 function About() {
   return (

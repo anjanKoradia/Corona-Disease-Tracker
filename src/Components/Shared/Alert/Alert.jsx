@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStethoscope } from "@fortawesome/free-solid-svg-icons";
-import "./Alert.modual.css";
+import "./Alert.css";
 
 function Alert() {
   return (

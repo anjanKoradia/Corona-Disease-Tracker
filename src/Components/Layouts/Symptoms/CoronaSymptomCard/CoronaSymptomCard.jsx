@@ -1,5 +1,5 @@
 import React from "react";
-import "./CoronaSymptomCard.modual.css"
+import "./CoronaSymptomCard.css"
 
 function CoronaSymptomCard({ image, title, detail_title, detail }) {
   return (

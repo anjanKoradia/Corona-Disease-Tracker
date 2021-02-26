@@ -1,0 +1,27 @@
+.symptoms .corona_symptoms {
+  margin: 3rem 0;
+}
+.corona_symptoms .symptoms_details .about_corona_symptoms h1 {
+  font-size: 1.6rem;
+  color: var(--blue2);
+  margin-bottom: 1.2rem;
+}
+.corona_symptoms .symptoms_details .about_corona_symptoms p,
+.corona_symptoms .symptoms_details .other_symptoms p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.corona_symptoms .symptoms_details .major_symptoms {
+  margin: 3rem 0;
+}
+
+.corona_symptoms .symptoms_details .other_symptoms h1 {
+  margin: 1.2rem 0;
+  font-size: 1.6rem;
+}
+
+.corona_symptoms .info_quickLinks {
+  margin-left: 4rem;
+}
