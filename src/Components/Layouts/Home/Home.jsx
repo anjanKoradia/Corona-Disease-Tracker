@@ -10,6 +10,7 @@ import Stay_Home from "../../../Assets/Images/stay_home.png";
 function Home() {
   return (
     <section className="home_container">
+      {/* ---------- Hero Page ---------- */}
       <div className="hero container flex align_center justify_between">
         <div className="hero_details">
           <div className="tag">
@@ -61,9 +62,16 @@ function Home() {
           <img src={heroImg} alt="" />
         </div>
       </div>
+      {/* ---------- What To Do In Corona Page ---------- */}
       <div className="WhatToDo_In_Corona container">
-        <div className="what_to_do flex align_center justify_between">
+        <div className="what_to_do flex align_center">
+          <div className="image">
+            <img src={Stay_Home} alt="" />
+          </div>
           <div className="steps">
+            <div className="tag">
+              <span>What To Do In Corona</span>
+            </div>
             <h1>Stay at home to stop coronavirus spreading</h1>
             <p>
               Everyone must stay at home to help stop the spread of coronavirus.
@@ -97,9 +105,6 @@ function Home() {
                 such as acetaminophen, to help you feel better.
               </li>
             </ul>
-          </div>
-          <div className="image">
-            <img src={Stay_Home} alt="" />
           </div>
         </div>
       </div>

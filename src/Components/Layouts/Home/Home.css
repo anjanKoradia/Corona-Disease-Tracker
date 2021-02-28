@@ -72,29 +72,29 @@
   margin-top: 0;
   background-color: var(--pure);
 }
-.WhatToDo_In_Corona .title {
-  max-width: 50%;
-}
-.WhatToDo_In_Corona .title h1 {
-  color: var(--blue2);
-}
-.WhatToDo_In_Corona .title p {
-  color: var(--red1);
-  font-size: 1.2rem;
-}
 
 .WhatToDo_In_Corona .what_to_do {
-  padding: 2.5rem;
   margin: 2rem 0;
-  border: 2px solid var(--blue2);
-  border-radius: 10px;
-  background-color: var(--pure);
-  box-shadow: 0 0px 8px rgba(42, 129, 234, 0.5);
 }
 
+.WhatToDo_In_Corona .what_to_do .image {
+  width: 95%;
+  margin-right: 4rem;
+}
+.WhatToDo_In_Corona .what_to_do .image img {
+  width: 100%;
+}
+
+.WhatToDo_In_Corona .what_to_do .steps > h1 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
 .WhatToDo_In_Corona .what_to_do .steps > p {
   font-size: 1.2rem;
   margin: 1rem 0;
+}
+.WhatToDo_In_Corona .what_to_do .steps .tag {
+  margin: 1.5rem 0;
 }
 .WhatToDo_In_Corona .what_to_do .steps .whatToDo_list {
   list-style: none;
@@ -112,12 +112,4 @@
   margin-left: -1.3em;
   width: 1.5rem;
   color: var(--green1);
-}
-
-.WhatToDo_In_Corona .what_to_do .image {
-  width: 100%;
-  margin-left: 2rem;
-}
-.WhatToDo_In_Corona .what_to_do .image img {
-  width: 100%;
 }
