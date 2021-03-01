@@ -1,0 +1,34 @@
+.steps_to_wash_hands {
+  margin: 0;
+  background-color: var(--pure);
+}
+
+.steps_to_wash_hands .heading {
+  text-align: center;
+}
+.steps_to_wash_hands .heading h1 {
+  font-size: 2.5rem;
+  color: var(--blue2);
+  padding: 1rem 0;
+}
+
+.steps_to_wash_hands .steps {
+  margin: 2rem 0;
+}
+
+.handwash_step {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10%;
+  height: 320px;
+}
+.handwash_step img {
+  width: 80%;
+}
+.handwash_step p {
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
