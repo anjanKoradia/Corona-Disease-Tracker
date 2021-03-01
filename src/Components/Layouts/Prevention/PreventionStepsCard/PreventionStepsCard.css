@@ -1,0 +1,10 @@
+.prevention_card {
+  margin: 2rem 0;
+  border: 3px dashed var(--blue2);
+  background-color: var(--pure);
+  padding: 1rem 2rem;
+}
+.prevention_card img {
+  margin-left: 2rem;
+  border-radius: 100%;
+}
