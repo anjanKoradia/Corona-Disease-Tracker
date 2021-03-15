@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--blue3);
+  padding: 1rem 10rem;
+  text-align: center;
+}
+
+.footer .copy_write {
+  font-size: 1.2rem;
+}
+.footer .copy_write .github_link {
+  color: var(--red1);
+  text-decoration: none;
+  margin: 0 0.3rem;
+}

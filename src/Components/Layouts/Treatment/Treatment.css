@@ -1,0 +1,24 @@
+.treatment .corona_treatment{
+  margin: 3rem 0;
+}
+
+.treatment_details > p {
+  margin: 1.5rem 0;
+}
+
+.treatment_type{
+  margin: 4rem 0;
+}
+.treatment_type h3{
+  color: var(--blue2);
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.treatment_type .self_care ul{
+padding: 1rem 3rem;
+}
+
+.corona_treatment .info_quickLinks {
+  margin-left: 4rem;
+}
