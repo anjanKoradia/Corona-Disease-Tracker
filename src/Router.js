@@ -5,6 +5,7 @@ import About from "./Components/Layouts/About/About";
 import Symptoms from "./Components/Layouts/Symptoms/Symptoms";
 import Prevention from "./Components/Layouts/Prevention/Prevention";
 import Treatment from "./Components/Layouts/Treatment/Treatment";
+import LiveCases from "./Components/Layouts/LiveCases/LiveCases";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
       <Route exact path="/symptoms" component={Symptoms} />
       <Route exact path="/prevention" component={Prevention} />
       <Route exact path="/treatment" component={Treatment} />
+      <Route exact path="/liveCase" component={LiveCases} />
     </Switch>
   );
 }

@@ -38,10 +38,11 @@ p {
 .container {
   background-color: var(--blue4);
   width: 100%;
-  padding: 4rem 10rem;
+  padding: 4rem 8rem;
   margin-top: 5rem;
 }
 
+/* Utility classes for flex-box */
 .flex {
   display: flex;
 }
@@ -52,6 +53,7 @@ p {
   justify-content: space-between;
 }
 
+/* Utility classes for tag */
 .tag {
   display: inline-block;
   background-color: var(--red2);
@@ -61,6 +63,7 @@ p {
   font-weight: 700;
 }
 
+/* Utility classes for button */
 .btn {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -78,6 +81,7 @@ p {
   color: var(--blue2);
 }
 
+/* Utility classes for title */
 .title h1 {
   font-size: 1.7rem;
   font-weight: 700;
@@ -85,4 +89,18 @@ p {
 .title p {
   font-size: 1.1rem;
   margin: 0.5rem 0;
+}
+
+/* Utility classes for color */
+.purple {
+  color: var(--purple1);
+}
+.green {
+  color: var(--green1);
+}
+.red {
+  color: var(--red1);
+}
+.blue {
+  color: var(--blue2);
 }

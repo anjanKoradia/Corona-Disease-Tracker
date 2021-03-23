@@ -1,0 +1,20 @@
+.corona_cases_country_list {
+  border: 1px solid var(--blue3);
+  border-radius: 8px;
+}
+.corona_cases_country_list h1 {
+  padding: 1rem;
+  border-bottom: 1px solid var(--blue3);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--blue3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue1);
+  border-radius: 10px;
+  height: 50px;
+}

@@ -1,0 +1,82 @@
+/* Live Cases Title */
+.live_cases_details {
+  flex: 0.6;
+}
+.live_cases_details .title {
+  font-family: "Oswald", sans-serif;
+}
+.live_cases_details .title h1 {
+  font-size: 6.5rem;
+  color: var(--blue1);
+}
+.live_cases_details .title > div {
+  margin: 0 0.5rem;
+}
+.live_cases_details .title h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: var(--red1);
+}
+.live_cases_details .title h2 {
+  font-size: 3.5rem;
+  line-height: 0.8;
+  color: var(--blue1);
+}
+
+/* Live Cases Detail */
+.live_cases_details .detail p {
+  color: var(--blue1);
+}
+
+/* Live Cases Buttons */
+.live_cases_buttons {
+  margin: 2rem 0;
+}
+.live_cases_buttons .btn .faShieldVirus,
+.live_cases_buttons .btn .faArrowRight {
+  margin-left: 1rem;
+}
+.live_cases_buttons .btn_2 {
+  margin: 0 2rem;
+}
+
+/*  */
+.worldWideCase_graph_countryList_container {
+  width: 100%;
+  padding: 5rem 8rem;
+}
+.worldWideCase_container .heading .select_box {
+  width: 30%;
+}
+.worldWideCase_container .world_wide_case {
+  margin: 1.5rem 0;
+}
+
+.graph_countryList_container {
+  margin: 0 1rem;
+}
+.graph_countryList_container .country_list {
+  flex: 0.55;
+}
+.graph_map {
+  flex: 0.4;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.line_graph {
+  width: 100%;
+}
+
+.map {
+  height: 430px;
+  border: 1px solid var(--blue3);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.map h1 {
+  padding-bottom: 1rem;
+}
+.map .leaflet-container {
+  height: 90%;
+  z-index: 1;
+}

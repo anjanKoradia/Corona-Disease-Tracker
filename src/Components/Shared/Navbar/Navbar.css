@@ -2,10 +2,10 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0 10rem;
+  padding: 0 8rem;
   background-color: var(--pure);
   border-bottom: 5px solid var(--blue3);
-  z-index: 1;
+  z-index: 10;
 }
 
 .navbar {

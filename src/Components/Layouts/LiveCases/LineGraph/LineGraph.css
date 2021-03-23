@@ -1,0 +1,8 @@
+.graph_container {
+  border: 1px solid var(--blue3);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.graph_container h1 {
+  padding-bottom: 1rem;
+}

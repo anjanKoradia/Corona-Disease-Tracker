@@ -1,0 +1,17 @@
+.cases_line .faSquare {
+  margin-right: 1rem;
+}
+.cases_line .title p {
+  font-size: 1.2rem;
+}
+.cases_line .value span {
+  background-color: var(--blue4);
+  padding: 0.2rem;
+  margin: 0 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: var(--red1);
+}
+.cases_line .value p {
+  font-weight: 700;
+}

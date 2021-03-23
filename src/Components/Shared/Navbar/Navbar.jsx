@@ -57,7 +57,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="live_case">
-            <Link className="btn btn_1" to="/live_case">
+            <Link className="btn btn_1" to="/liveCase">
               Live Cases
             </Link>
           </div>

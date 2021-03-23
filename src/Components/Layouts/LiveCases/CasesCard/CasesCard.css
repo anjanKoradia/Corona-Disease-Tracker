@@ -1,0 +1,25 @@
+.cases_card {
+  background-color: var(--pure);
+  border: 1px solid var(--blue3);
+  padding: 1.5rem;
+  width: 100%;
+  margin: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cases_card p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.cases_card h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.cases_card p:nth-child(4) {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.box--selected {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
