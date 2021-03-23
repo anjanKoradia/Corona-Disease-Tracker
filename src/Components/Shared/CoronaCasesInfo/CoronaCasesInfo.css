@@ -1,0 +1,27 @@
+.cases_by_country {
+  background-color: var(--pure);
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+.cases_by_country .select_box {
+  margin: 2rem 0;
+}
+.cases_by_country .total_confirme_cases {
+  margin: 1rem 0;
+}
+.cases_by_country .total_confirme_cases h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.vaccine_dose_container .faSyringe {
+  margin-right: 1rem;
+  color: var(--blue2);
+}
+.vaccine_dose_container .title p {
+  font-size: 1.2rem;
+}
+.vaccine_dose_container .value p {
+  font-weight: 700;
+}
