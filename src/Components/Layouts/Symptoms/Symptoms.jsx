@@ -74,13 +74,6 @@ function Symptoms() {
             </div>
           </div>
           <div className="info_quickLinks">
-            <div className="video_player">
-              <ReactPlayer
-                url="https://www.youtube.com/embed/bPITHEiFWLc"
-                width="450px"
-                height="250px"
-              />
-            </div>
             <Alert />
             <CoronaCasesInfo />
             <QuickLinks />

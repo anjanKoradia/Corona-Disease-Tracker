@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import Alert from "../../Shared/Alert/Alert";
+import CoronaCasesInfo from "../../Shared/CoronaCasesInfo/CoronaCasesInfo";
 import QuickLinks from "../../Shared/QuickLinks/QuickLinks";
 import "./Treatment.css";
 
@@ -74,14 +75,8 @@ function Treatment() {
             </div>
           </div>
           <div className="info_quickLinks">
-            <div className="video_player">
-              <ReactPlayer
-                url="https://www.youtube.com/embed/bPITHEiFWLc"
-                width="450px"
-                height="250px"
-              />
-            </div>
             <Alert />
+            <CoronaCasesInfo />
             <QuickLinks />
           </div>
         </div>
