@@ -2,14 +2,12 @@ import React from "react";
 import ReactPlayer from "react-player";
 import Alert from "../../Shared/Alert/Alert";
 import QuickLinks from "../../Shared/QuickLinks/QuickLinks";
-
 import PreventionStepsCard from "./PreventionStepsCard/PreventionStepsCard";
-
 import home from "../../../Assets/Images/home.png";
 import wash_hand from "../../../Assets/Images/wash_hand.png";
 import touching_face from "../../../Assets/Images/touching_face.png";
 import hygiene from "../../../Assets/Images/hygiene.png";
-
+import CoronaCasesInfo from "../../Shared/CoronaCasesInfo/CoronaCasesInfo";
 import "./Prevention.css"
 
 function Prevention() {
@@ -71,6 +69,7 @@ function Prevention() {
               />
             </div>
             <Alert />
+            <CoronaCasesInfo />
             <QuickLinks />
           </div>
         </div>

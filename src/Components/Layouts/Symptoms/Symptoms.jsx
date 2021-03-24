@@ -9,6 +9,7 @@ import QuickLinks from "../../Shared/QuickLinks/QuickLinks";
 import Alert from "../../Shared/Alert/Alert";
 
 import "./Symptoms.css";
+import CoronaCasesInfo from "../../Shared/CoronaCasesInfo/CoronaCasesInfo";
 
 function Symptoms() {
   return (
@@ -81,6 +82,7 @@ function Symptoms() {
               />
             </div>
             <Alert />
+            <CoronaCasesInfo />
             <QuickLinks />
           </div>
         </div>
