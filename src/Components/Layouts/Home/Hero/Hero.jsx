@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { faArrowRight, faShieldVirus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import numeral from "numeral";
 import heroImg from "../../../../Assets/Images/hero.png";
 
 import "./Hero.css";
 
-function Hero() {
+const today = new Date()
+const yesterday = new Date(today)
+yesterday.setDate(yesterday.getDate() - 1)
+const yesterdayDate = yesterday.toDateString()
+
+function Hero({worldCoronaCases}) {
   return (
     <div className="hero container flex align_center justify_between">
       <div className="hero_details">
@@ -30,11 +34,11 @@ function Hero() {
           </p>
         </div>
         <div className="hero_buttons flex align_center">
-          <Link className="btn btn_1" to="/">
+          <Link className="btn btn_1" to="/prevention">
             How To Protect
             <FontAwesomeIcon className="faShieldVirus" icon={faShieldVirus} />
           </Link>
-          <Link className="btn btn_2" to="/">
+          <Link className="btn btn_2" to="/about">
             About COVID-19
             <FontAwesomeIcon className="faArrowRight" icon={faArrowRight} />
           </Link>
@@ -43,18 +47,18 @@ function Hero() {
           <div className="cases flex align_center justify_between">
             <div className="confirmed_cases">
               <p>CONFIRMED CASES</p>
-              <h1>105,512,828</h1>
+              <h1>{numeral(worldCoronaCases.cases).format("0,0")}</h1>
             </div>
             <div className="deaths">
               <p>DEATHS</p>
-              <h1>2,296,684</h1>
+              <h1>{numeral(worldCoronaCases.deaths).format("0,0")}</h1>
             </div>
             <div className="recovered">
               <p>RECOVERED</p>
-              <h1>77,133,136</h1>
+              <h1>{numeral(worldCoronaCases.recovered).format("0,0")}</h1>
             </div>
           </div>
-          <p>* Last updated: Feb 05, 2021, 06:58 AM America/Chicago</p>
+          <p>* Last updated: {yesterdayDate} 06:58 AM India/Kolkata</p>
         </div>
       </div>
       <div className="hero_img">

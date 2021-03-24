@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import "./QuickLinks.css";
@@ -8,7 +8,7 @@ function QuickLinks() {
   return (
     <div className="quick_links flex">
       <h2>Quick Links</h2>
-      <NavLink
+      <Link
         className="link flex align_center justify_between"
         to="/symptoms"
       >
@@ -17,8 +17,8 @@ function QuickLinks() {
           className="faLongArrowAltRight"
           icon={faLongArrowAltRight}
         />
-      </NavLink>
-      <NavLink
+      </Link>
+      <Link
         className="link flex align_center justify_between"
         to="/prevention"
       >
@@ -27,14 +27,14 @@ function QuickLinks() {
           className="faLongArrowAltRight"
           icon={faLongArrowAltRight}
         />
-      </NavLink>
-      <NavLink className="link flex align_center justify_between" to="/">
+      </Link>
+      <Link className="link flex align_center justify_between" to="/treatment">
         Treatment for coronavirus
         <FontAwesomeIcon
           className="faLongArrowAltRight"
           icon={faLongArrowAltRight}
         />
-      </NavLink>
+      </Link>
     </div>
   );
 }

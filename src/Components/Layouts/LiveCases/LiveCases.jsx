@@ -92,11 +92,11 @@ function LiveCases() {
             </p>
           </div>
           <div className="live_cases_buttons flex align_center">
-            <Link className="btn btn_1" to="/">
+            <Link className="btn btn_1" to="/symptoms">
               Symptoms
               <FontAwesomeIcon className="faShieldVirus" icon={faLungsVirus} />
             </Link>
-            <Link className="btn btn_2" to="/">
+            <Link className="btn btn_2" to="/treatment">
               Treatment
               <FontAwesomeIcon className="faArrowRight" icon={faSyringe} />
             </Link>
