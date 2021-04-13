@@ -2,51 +2,89 @@
   margin-top: 0;
   background-color: var(--pure);
 }
-
 .WhatToDo_In_Corona .heading {
   text-align: center;
   margin: 1.5rem 0;
 }
-
 .WhatToDo_In_Corona .heading h1 {
   font-size: 2.5rem;
   color: var(--blue2);
   padding: 1rem 0;
 }
 
-.WhatToDo_In_Corona .what_to_do {
-  padding: 2rem 0;
+.what_to_do {
+  padding: 1rem 0;
+}
+/* -------------------- Img in what to do -------------------- */
+.what_to_do .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.5;
+}
+.what_to_do .image img {
+  width: 80%;
 }
 
-.WhatToDo_In_Corona .what_to_do .image {
-  width: 95%;
-  margin-right: 4rem;
+/* -------------------- Steps in what to do -------------------- */
+.what_to_do .steps {
+  flex: 0.45;
 }
-.WhatToDo_In_Corona .what_to_do .image img {
-  width: 100%;
-}
-
-.WhatToDo_In_Corona .what_to_do .steps > p {
+.what_to_do .steps > p {
   font-size: 1.2rem;
   margin: 1rem 0;
 }
-.WhatToDo_In_Corona .what_to_do .steps .tag {
+.what_to_do .steps .tag {
   margin: 1.5rem 0;
 }
-.WhatToDo_In_Corona .what_to_do .steps .whatToDo_list {
+.what_to_do .steps .whatToDo_list {
   list-style: none;
   padding: 0;
 }
-.WhatToDo_In_Corona .what_to_do .steps .whatToDo_list li {
+.what_to_do .steps .whatToDo_list li {
   padding-left: 1.3em;
   margin: 1rem 0;
   font-size: 1.1rem;
   text-align: justify;
 }
-.WhatToDo_In_Corona .what_to_do .steps .whatToDo_list li:before {
+.what_to_do .steps .whatToDo_list li:before {
   content: "\2714";
   display: inline-block;
   margin-left: -1.3em;
   width: 1.5rem;
   color: var(--green1);
+}
+
+/* -------------------- Media Query -------------------- */
+
+@media screen and (max-width: 1022px) and (min-width: 768px) {
+  .what_to_do .steps > p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  .what_to_do .steps .whatToDo_list li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .what_to_do {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 470px) {
+  .WhatToDo_In_Corona .heading h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .WhatToDo_In_Corona .heading h1 {
+    font-size: 1.6rem;
+  }
+  .what_to_do .steps > p {
+    font-size: 1rem;
+  }
+  .what_to_do .steps .whatToDo_list li {
+    font-size: 0.9rem;
+  }
 }

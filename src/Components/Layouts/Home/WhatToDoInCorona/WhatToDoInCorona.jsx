@@ -13,7 +13,7 @@ function WhatToDoInCorona() {
         </div>
         <h1>Stay at home to stop coronavirus spreading</h1>
       </div>
-      <div className="what_to_do flex">
+      <div className="what_to_do flex justify_between align_center">
         <div className="image">
           <img src={Stay_Home} alt="" />
         </div>

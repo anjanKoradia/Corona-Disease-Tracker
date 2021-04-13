@@ -1,7 +1,8 @@
 .footer {
   background-color: var(--blue3);
-  padding: 1rem 10rem;
   text-align: center;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .footer .copy_write {
@@ -11,4 +12,12 @@
   color: var(--red1);
   text-decoration: none;
   margin: 0 0.3rem;
+}
+
+/* -------------------- Media Query -------------------- */
+
+@media screen and (max-width: 660px) {
+  .footer .copy_write {
+    font-size: 1rem;
+  }
 }

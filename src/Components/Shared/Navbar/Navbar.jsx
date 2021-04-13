@@ -1,21 +1,41 @@
+import {
+  faAlignRight,
+  faArrowLeft,
+  faHeadSideMask,
+  faHome,
+  faLungsVirus,
+  faSyringe,
+  faVirus,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../../Assets/Images/logo.png";
 import "./Navbar.css";
 
 function Navbar() {
+  const openMenu = () => {
+    document.querySelector(".mobile_navbar").classList.toggle("toggleNavbar");
+    document.querySelector(".mobile_overlay").classList.toggle("toggleOverly");
+  };
+
   return (
     <nav>
       <div className="navbar flex align_center justify_between">
         <div className="logo">
-          <Link to="/" activeClassName="active">
+          <Link to="/">
             <img src={logo} alt="" />
           </Link>
         </div>
-        <div className="navbar_links flex align_center">
+        <div className="navbar_links">
           <ul className="nav_items flex align_center">
             <li>
-              <NavLink exact className="nav_link" to="/" activeClassName="active">
+              <NavLink
+                exact
+                className="nav_link"
+                to="/"
+                activeClassName="active"
+              >
                 Home
               </NavLink>
             </li>
@@ -39,9 +59,81 @@ function Navbar() {
                 Treatment
               </NavLink>
             </li>
+            <div className="live_case">
+              <NavLink
+                className="btn btn_1"
+                to="/liveCase"
+                activeClassName="on"
+              >
+                Live Cases
+              </NavLink>
+            </div>
           </ul>
-          <div className="live_case">
-            <NavLink className="btn btn_1" to="/liveCase" activeClassName="on">
+        </div>
+        <div className="hamburger">
+          <FontAwesomeIcon
+            className="faAlignRight fa-2x"
+            icon={faAlignRight}
+            onClick={openMenu}
+          />
+        </div>
+      </div>
+
+      {/* -------------------- Mobile Navbar -------------------- */}
+
+      <div class="mobile_overlay" onClick={openMenu}></div>
+      <div className="mobile_navbar">
+        <div className="mobile_nav flex align_center justify_between">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
+          </div>
+          <div className="back">
+            <FontAwesomeIcon
+              className="faArrowLeft"
+              icon={faArrowLeft}
+              onClick={openMenu}
+            />
+          </div>
+        </div>
+        <div className="mobile_navitems flex">
+          <NavLink
+            exact
+            className="mobile_navlink"
+            to="/"
+            activeClassName="active"
+          >
+            <FontAwesomeIcon className="faHome mobile_icon" icon={faHome} />
+            Home
+          </NavLink>
+          <NavLink className="mobile_navlink" to="/about">
+            <FontAwesomeIcon className="faVirus mobile_icon" icon={faVirus} />
+            About
+          </NavLink>
+          <NavLink className="mobile_navlink" to="/symptoms">
+            <FontAwesomeIcon
+              className="faLungsVirus mobile_icon"
+              icon={faLungsVirus}
+            />
+            Symptoms
+          </NavLink>
+          <NavLink className="mobile_navlink" to="/prevention">
+            <FontAwesomeIcon
+              className="faHeadSideMask mobile_icon"
+              icon={faHeadSideMask}
+            />
+            Prevention
+          </NavLink>
+          <NavLink className="mobile_navlink" to="/treatment">
+            <FontAwesomeIcon
+              className="faSyringe mobile_icon"
+              icon={faSyringe}
+            />
+            Treatment
+          </NavLink>
+          <div className="mobile_livecases">
+            <NavLink className="btn btn_1 " to="/liveCase" activeClassName="on">
               Live Cases
             </NavLink>
           </div>

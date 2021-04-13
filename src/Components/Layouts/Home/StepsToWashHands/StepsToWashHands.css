@@ -22,7 +22,8 @@
   padding: 1rem;
   margin: 1rem;
   border-radius: 10%;
-  height: 320px;
+  height: 100%;
+  outline: none;
 }
 .handwash_step img {
   width: 80%;
@@ -31,4 +32,21 @@
   font-size: 1.3rem;
   margin: 1.5rem 0;
   text-align: center;
+}
+.cJeRRR {
+  background-color: var(--red2) !important;
+  box-shadow: 0 0 1px 3px var(--red1) !important;
+}
+
+/* -------------------- Media Query -------------------- */
+
+@media screen and (max-width: 470px) {
+  .steps_to_wash_hands .heading h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .steps_to_wash_hands .heading h1 {
+    font-size: 1.6rem;
+  }
 }

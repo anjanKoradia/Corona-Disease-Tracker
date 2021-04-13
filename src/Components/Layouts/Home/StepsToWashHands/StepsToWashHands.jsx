@@ -17,10 +17,29 @@ import handWashStap11 from "../../../../Assets/Images/handWash_step11.png";
 import handWashStap12 from "../../../../Assets/Images/handWash_step12.png";
 
 const breakPoints = [
-  { width: 1, itemsToShow: 2 },
-  { width: 550, itemsToShow: 3 },
-  { width: 768, itemsToShow: 4 },
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
+];
+
+const items = [
+  { id: 1, img: handWashStap1, title: "Wet Hands" },
+  { id: 2, img: handWashStap2, title: "Apply Shop" },
+  { id: 3, img: handWashStap3, title: "Rub Hands Palm To Palm" },
+  { id: 4, img: handWashStap4, title: "Lather The Backs Of Your Hands" },
+  { id: 5, img: handWashStap5, title: "Scrub Between Your Fingers" },
+  { id: 6, img: handWashStap6, title: "Rub The Backs Of Fingers" },
+  { id: 7, img: handWashStap7, title: "Clean Thumbs" },
+  { id: 8, img: handWashStap8, title: "Wash Fingernails And Fingertips" },
+  { id: 9, img: handWashStap9, title: "Rinse Hannds" },
+  { id: 10, img: handWashStap10, title: "Dry With Single Use Towel" },
+  {
+    id: 11,
+    img: handWashStap11,
+    title: "Use The Towel To Turn Off The Faucet",
+  },
+  { id: 12, img: handWashStap12, title: "Your Hands Are Clean" },
 ];
 
 function StepsToWashHands() {
@@ -38,56 +57,13 @@ function StepsToWashHands() {
           showArrows={false}
           enableAutoPlay={true}
           autoPlaySpeed={2000}
-          preventDefaultTouchmoveEvent={true}
+          preventDefaultTouchmoveEvent={false}
         >
-          <div className="handwash_step">
-            <img src={handWashStap1} alt="" />
-            <p>Wet Hands</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap2} alt="" />
-            <p>Apply Shop</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap3} alt="" />
-            <p>Rub Hands Palm To Palm</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap4} alt="" />
-            <p>Lather The Backs Of Your Hands</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap5} alt="" />
-            <p>Scrub Between Your Fingers</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap6} alt="" />
-            <p>Rub The Backs Of Fingers On The Opposing Plams</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap7} alt="" />
-            <p>Clean Thumbs</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap8} alt="" />
-            <p>Wash Fingernails And Fingertips</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap9} alt="" />
-            <p>Rinse Hannds</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap10} alt="" />
-            <p>Dry With Single Use Towel</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap11} alt="" />
-            <p>Use The Towel To Turn Off The Faucet</p>
-          </div>
-          <div className="handwash_step">
-            <img src={handWashStap12} alt="" />
-            <p>Your Hands Are Clean</p>
-          </div>
+          {items.map((item) => (
+            <div key={item.id} className="handwash_step">
+              <img src={item.img} alt="" />
+            </div>
+          ))}
         </Carousel>
       </div>
     </div>
