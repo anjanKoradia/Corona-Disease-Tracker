@@ -1,5 +1,5 @@
 import React from "react";
-import "./TransmissionDetailCard.css"
+import "./TransmissionDetailCard.css";
 
 function TransmissionDetailCard({ image, title, detail }) {
   return (

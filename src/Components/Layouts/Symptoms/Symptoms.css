@@ -25,3 +25,17 @@
 .corona_symptoms .info_quickLinks {
   margin-left: 4rem;
 }
+
+/* -------------------- Media Query -------------------- */
+
+@media only screen and (max-width: 425px) {
+  .corona_symptoms .symptoms_details .about_corona_symptoms p,
+  .corona_symptoms .symptoms_details .other_symptoms p {
+    font-size: 1rem;
+  }
+  .corona_symptoms .symptoms_details .about_corona_symptoms h1,
+  .corona_symptoms .symptoms_details .other_symptoms h1,
+  .corona_symptoms .symptoms_details .major_symptoms h1 {
+    font-size: 1.4rem;
+  }
+}

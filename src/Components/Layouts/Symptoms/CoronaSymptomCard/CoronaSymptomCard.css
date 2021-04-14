@@ -22,3 +22,17 @@
 .symptom_detail p span {
   font-weight: 700;
 }
+
+/* -------------------- Media Query -------------------- */
+
+@media only screen and (max-width: 545px) {
+  .symptom_card {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .symptom_detail p {
+    font-size: 1rem;
+  }
+}

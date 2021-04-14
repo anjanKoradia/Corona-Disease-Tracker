@@ -26,3 +26,46 @@
 .transmission_detail_card:hover {
   transform: translateY(-20px);
 }
+
+/* -------------------- Media Query -------------------- */
+
+@media only screen and (max-width: 1280px) and (min-width: 870px) {
+  .transmission_detail_card .transmission_details {
+    padding: 1.5rem;
+  }
+  .transmission_detail_card .transmission_details h2 {
+    font-size: 1.2rem;
+  }
+  .transmission_detail_card .transmission_details p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .transmission_detail_card {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .transmission > div {
+    flex-direction: column;
+  }
+  .transmission_detail_card:nth-child(2) {
+    margin: 2rem auto;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  .transmission_detail_card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .transmission_detail_card .transmission_details {
+    padding: 1.5rem;
+  }
+  .transmission_detail_card .transmission_details h2 {
+    font-size: 1.2rem;
+  }
+  .transmission_detail_card .transmission_details p {
+    font-size: 1rem;
+  }
+}

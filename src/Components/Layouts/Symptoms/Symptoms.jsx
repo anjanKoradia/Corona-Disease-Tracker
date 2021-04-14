@@ -1,13 +1,10 @@
 import React from "react";
 import CoronaSymptomCard from "./CoronaSymptomCard/CoronaSymptomCard";
-
 import Fever from "../../../Assets/Images/Fever.png";
 import Cough from "../../../Assets/Images/Cough.png";
 import Difficulty_Breathing from "../../../Assets/Images/Difficulty-Breathing.png";
-import ReactPlayer from "react-player";
 import QuickLinks from "../../Shared/QuickLinks/QuickLinks";
 import Alert from "../../Shared/Alert/Alert";
-
 import "./Symptoms.css";
 import CoronaCasesInfo from "../../Shared/CoronaCasesInfo/CoronaCasesInfo";
 
