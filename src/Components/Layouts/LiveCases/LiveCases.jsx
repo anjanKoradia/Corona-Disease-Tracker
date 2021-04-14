@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLungsVirus, faSyringe } from "@fortawesome/free-solid-svg-icons";
 import "leaflet/dist/leaflet.css";
+import CoronaCasesInfo from "../../Shared/CoronaCasesInfo/CoronaCasesInfo";
 
 function LiveCases() {
   const [countriesNameISO, setCountriesNameISO] = useState([]);
@@ -70,8 +71,10 @@ function LiveCases() {
 
   return (
     <section className="live_cases_container">
-      <div className="map_container container flex justify_between">
-        <img src={map} alt="" />
+      <div className="map_container container flex justify_between align_center">
+        <div className="map_img">
+          <img src={map} alt="" />
+        </div>
         <div className="live_cases_details">
           <div className="tag">
             <span>Live Update</span>
@@ -103,7 +106,10 @@ function LiveCases() {
           </div>
         </div>
       </div>
-      <div className="worldWideCase_graph_countryList_container">
+      <div className="mobile_CoronaCasesInfo_box">
+        <CoronaCasesInfo />
+      </div>
+      <div className="worldWideCase_graph_countryList_container container">
         <div className="worldWideCase_container">
           <div className="heading flex align_center justify_between">
             <h1>Worldwide Coronavirus Cases</h1>
@@ -149,7 +155,6 @@ function LiveCases() {
               heading_color="green"
             />
             <CasesCard
-              // onClick={(e) => setCasesType("active")}
               title="Active Cases"
               total_cases={numeral(countryCasesData.active).format("0,0")}
               cases={`+ ${numeral(countryCasesData.critical).format("0,0")}`}

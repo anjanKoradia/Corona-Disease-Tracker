@@ -2,8 +2,8 @@
   background-color: var(--pure);
   border: 1px solid var(--blue3);
   padding: 1.5rem;
-  width: 100%;
-  margin: 1rem;
+  width: 250px;
+  margin: 1rem auto;
   border-radius: 8px;
   cursor: pointer;
 }

@@ -28,7 +28,7 @@ function CountryListTable() {
     rows: {
       style: {
         fontSize: "1rem",
-        minHeight: "50px",
+        minHeight: "60px",
         color: "var(--blue1)",
       },
     },
