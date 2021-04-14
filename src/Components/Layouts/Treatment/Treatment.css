@@ -1,4 +1,4 @@
-.treatment .corona_treatment{
+.treatment .corona_treatment {
   margin: 3rem 0;
 }
 
@@ -6,19 +6,30 @@
   margin: 1.5rem 0;
 }
 
-.treatment_type{
+.treatment_type {
   margin: 4rem 0;
 }
-.treatment_type h3{
+.treatment_type h3 {
   color: var(--blue2);
   margin: 1rem 0;
   font-size: 1.5rem;
 }
 
-.treatment_type .self_care ul{
-padding: 1rem 3rem;
+.treatment_type .self_care ul {
+  padding: 1rem 3rem;
 }
 
 .corona_treatment .info_quickLinks {
   margin-left: 4rem;
+}
+
+/* -------------------- Media Query -------------------- */
+
+@media only screen and (max-width: 425px) {
+  .treatment_details p {
+    font-size: 1rem;
+  }
+  .treatment_details h3 {
+    font-size: 1.4rem;
+  }
 }

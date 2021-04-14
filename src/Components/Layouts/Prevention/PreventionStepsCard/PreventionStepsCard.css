@@ -8,3 +8,34 @@
   margin-left: 2rem;
   border-radius: 100%;
 }
+
+/* -------------------- Media Query -------------------- */
+
+@media only screen and (max-width: 1230px) and (min-width: 1025px) {
+  .prevention_card {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .prevention_card {
+    flex-direction: column-reverse;
+  }
+  .prevention_card img {
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .prevention_card .prevention_detail h1 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .prevention_card {
+    padding: 1rem;
+  }
+  .prevention_card img {
+    width: 80%;
+  }
+}

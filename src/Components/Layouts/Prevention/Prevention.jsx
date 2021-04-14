@@ -8,7 +8,7 @@ import wash_hand from "../../../Assets/Images/wash_hand.png";
 import touching_face from "../../../Assets/Images/touching_face.png";
 import hygiene from "../../../Assets/Images/hygiene.png";
 import CoronaCasesInfo from "../../Shared/CoronaCasesInfo/CoronaCasesInfo";
-import "./Prevention.css"
+import "./Prevention.css";
 
 function Prevention() {
   return (

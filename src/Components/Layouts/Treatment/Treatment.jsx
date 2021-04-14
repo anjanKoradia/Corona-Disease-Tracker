@@ -1,5 +1,4 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import Alert from "../../Shared/Alert/Alert";
 import CoronaCasesInfo from "../../Shared/CoronaCasesInfo/CoronaCasesInfo";
 import QuickLinks from "../../Shared/QuickLinks/QuickLinks";
@@ -12,8 +11,8 @@ function Treatment() {
         <div className="title">
           <h1>TREATMENT FOR CORONAVIRUS</h1>
           <p>
-            Coronavirus disease is an infectious disease caused by a
-            newly discovered coronavirus.
+            Coronavirus disease is an infectious disease caused by a newly
+            discovered coronavirus.
           </p>
         </div>
         <div className="corona_treatment flex">
