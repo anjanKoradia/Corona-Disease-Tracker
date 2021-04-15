@@ -14,7 +14,7 @@ import logo from "../../../Assets/Images/logo.png";
 import "./Navbar.css";
 
 function Navbar() {
-  const openMenu = () => {
+  const toggleMenu = () => {
     document.querySelector(".mobile_navbar").classList.toggle("toggleNavbar");
     document.querySelector(".mobile_overlay").classList.toggle("toggleOverly");
   };
@@ -74,14 +74,14 @@ function Navbar() {
           <FontAwesomeIcon
             className="faAlignRight fa-2x"
             icon={faAlignRight}
-            onClick={openMenu}
+            onClick={toggleMenu}
           />
         </div>
       </div>
 
       {/* -------------------- Mobile Navbar -------------------- */}
 
-      <div class="mobile_overlay" onClick={openMenu}></div>
+      <div class="mobile_overlay" onClick={toggleMenu}></div>
       <div className="mobile_navbar">
         <div className="mobile_nav flex align_center justify_between">
           <div className="logo">
@@ -93,7 +93,7 @@ function Navbar() {
             <FontAwesomeIcon
               className="faArrowLeft"
               icon={faArrowLeft}
-              onClick={openMenu}
+              onClick={toggleMenu}
             />
           </div>
         </div>
@@ -103,29 +103,42 @@ function Navbar() {
             className="mobile_navlink"
             to="/"
             activeClassName="active"
+            onClick={toggleMenu}
           >
             <FontAwesomeIcon className="faHome mobile_icon" icon={faHome} />
             Home
           </NavLink>
-          <NavLink className="mobile_navlink" to="/about">
+          <NavLink className="mobile_navlink" to="/about" onClick={toggleMenu}>
             <FontAwesomeIcon className="faVirus mobile_icon" icon={faVirus} />
             About
           </NavLink>
-          <NavLink className="mobile_navlink" to="/symptoms">
+          <NavLink
+            className="mobile_navlink"
+            to="/symptoms"
+            onClick={toggleMenu}
+          >
             <FontAwesomeIcon
               className="faLungsVirus mobile_icon"
               icon={faLungsVirus}
             />
             Symptoms
           </NavLink>
-          <NavLink className="mobile_navlink" to="/prevention">
+          <NavLink
+            className="mobile_navlink"
+            to="/prevention"
+            onClick={toggleMenu}
+          >
             <FontAwesomeIcon
               className="faHeadSideMask mobile_icon"
               icon={faHeadSideMask}
             />
             Prevention
           </NavLink>
-          <NavLink className="mobile_navlink" to="/treatment">
+          <NavLink
+            className="mobile_navlink"
+            to="/treatment"
+            onClick={toggleMenu}
+          >
             <FontAwesomeIcon
               className="faSyringe mobile_icon"
               icon={faSyringe}
@@ -133,7 +146,12 @@ function Navbar() {
             Treatment
           </NavLink>
           <div className="mobile_livecases">
-            <NavLink className="btn btn_1 " to="/liveCase" activeClassName="on">
+            <NavLink
+              className="btn btn_1 "
+              to="/liveCase"
+              activeClassName="on"
+              onClick={toggleMenu}
+            >
               Live Cases
             </NavLink>
           </div>
