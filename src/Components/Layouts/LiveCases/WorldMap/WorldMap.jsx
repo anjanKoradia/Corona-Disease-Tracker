@@ -15,7 +15,7 @@ const casesTypeColors = {
   deaths: {
     hex: "#1ee0ac",
     multiplier: 1600,
-  }
+  },
 };
 
 function WorldMap({ countries, casesType, center, zoom }) {
@@ -25,8 +25,9 @@ function WorldMap({ countries, casesType, center, zoom }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
-      {countries.map((country) => (
+      {countries.map((country, index) => (
         <Circle
+          key={index}
           center={[country.countryInfo.lat, country.countryInfo.long]}
           color={casesTypeColors[casesType].hex}
           fillColor={casesTypeColors[casesType].hex}

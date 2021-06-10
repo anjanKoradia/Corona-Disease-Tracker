@@ -81,7 +81,7 @@ function Navbar() {
 
       {/* -------------------- Mobile Navbar -------------------- */}
 
-      <div class="mobile_overlay" onClick={toggleMenu}></div>
+      <div className="mobile_overlay" onClick={toggleMenu}></div>
       <div className="mobile_navbar">
         <div className="mobile_nav flex align_center justify_between">
           <div className="logo">

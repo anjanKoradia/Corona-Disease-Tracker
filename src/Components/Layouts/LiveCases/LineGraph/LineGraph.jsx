@@ -57,7 +57,7 @@ const casesTypeColors = {
   },
   deaths: {
     hex: "#ff4f5b",
-  }
+  },
 };
 
 const buildChartData = (data, casesType) => {
@@ -72,7 +72,7 @@ const buildChartData = (data, casesType) => {
   return chartData;
 };
 
-function LineGraph({ casesType, countryForGraph="India" }) {
+function LineGraph({ casesType, countryForGraph = "India" }) {
   const [data, setData] = useState({});
 
   useEffect(() => {
@@ -108,7 +108,6 @@ function LineGraph({ casesType, countryForGraph="India" }) {
           }}
           options={options}
           height={200}
-          width="100%"
         />
       )}
     </div>

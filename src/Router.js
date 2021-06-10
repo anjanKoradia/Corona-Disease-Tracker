@@ -10,12 +10,12 @@ import LiveCases from "./Components/Layouts/LiveCases/LiveCases";
 function Router() {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/symptoms" component={Symptoms} />
-      <Route exact path="/prevention" component={Prevention} />
-      <Route exact path="/treatment" component={Treatment} />
-      <Route exact path="/liveCase" component={LiveCases} />
+      <Route path="/liveCase" component={LiveCases} />
+      <Route path="/treatment" component={Treatment} />
+      <Route path="/prevention" component={Prevention} />
+      <Route path="/symptoms" component={Symptoms} />
+      <Route path="/about" component={About} />
+      <Route path="/" component={Home} />
     </Switch>
   );
 }
