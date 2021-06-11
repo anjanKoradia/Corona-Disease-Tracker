@@ -1,4 +1,4 @@
-# Responsive Corona-Disease website React Js.
+# Responsive Corona-Disease website using React-Js.
 
 ![Corona-Disease website](https://github.com/anjanKoradia/Corona-Disease-Tracker/blob/master/Website-Img.png)
 
